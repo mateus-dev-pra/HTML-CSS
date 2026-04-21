@@ -4,5 +4,5 @@
 
 ### 1º projeto
 
-- parte HTML [HTML](index.html)
-- parte CSS  [CSS](site.css)
+- parte HTML - [HTML](index.html)
+- parte CSS - [CSS](site.css)
