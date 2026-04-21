@@ -1,6 +1,6 @@
 # minhas coisas usando HTML e CSS
 
-## siteS básicoS com HTML e CSS
+## sites básicos com HTML e CSS
 
 ### 1º projeto
 
