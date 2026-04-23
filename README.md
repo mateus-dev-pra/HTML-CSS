@@ -2,4 +2,6 @@
 
 ## exercicios simples
 
-- [1º atividade](exercicio%201/)
+- site básico sobre tecnologia [1º atividade](exercicio%201/)
+
+- site básico referente a um poema - [2º atividade](site%20básico/)
