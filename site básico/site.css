@@ -39,7 +39,7 @@ color: black;
 padding: 2% ;
 line-height: 1.8;
 width: 50%;
-
+text-align: center;
 }
 
 p.seg{
@@ -48,7 +48,7 @@ background-color: rgba(0, 0, 0, 0.533);
 padding: 2%;
 line-height: 1.8;
 width: 50%;
-
+text-align: center;
 }
 
 section.todo {
