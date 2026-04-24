@@ -1,0 +1,267 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: fontelogo;
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+body {
+font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    
+}
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+
+}
+/*configurações da figura da mulher usando o óculos*/
+figure.foto {
+    position: relative;
+    border:4px solid white;
+    box-shadow: 1px 1px 4px black;
+width: fit-content;
+}
+
+figure.foto img {
+    height: auto;
+    width: 100%;
+  
+}
+/*define a parte do figcaption, top=altura, color= cor da letra, padding= espaço interno, border box= as coisas ficarem no limite de suas bordas*/
+figure.foto figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 1px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+/* faz com que a parte de figcapition mude quando o mouse passar por cima*/
+figure.foto:hover figcaption {
+    opacity: 1;
+
+}
+/*deixar o menu maiusculo e sem o pontos*/
+nav#menu ul {
+list-style: none;
+text-transform: uppercase;
+position: absolute;
+top: -20px;
+left: 300px;
+}
+/*deixa o menu na msm linha, cor de fundo, separaçao dentro e fora*/
+nav#menu li {
+ display: inline-block; 
+ background-color: #dddddd;  
+ padding: 10px;
+ margin: 20px;
+ transition: 1s;
+}
+/*para deixar o menu ocupando toda a linha*/
+nav#menu {
+display: block;
+
+}
+/*sumir com o (menu principal)*/
+nav#menu h1 {
+display: none;    
+}
+/*mudar a cor quando o mouse passar por cima*/
+nav#menu li:hover {
+    background-color: #606060;
+}
+/*faz o texto do link ser preto e tira o traço debaixo*/
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+/*muda a cor das letras quando passa o mouse por cima*/
+nav#menu a:hover {
+    color: #fff;
+   
+}
+/*determina a largura do site, cor, distancia dentro e fora*/
+div#interface {
+    width: 1480px;
+    background-color:#ffff;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    height: 1900px;
+}
+/*posiçao do oculos na esquerda*/
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1275px;
+top: 70px;
+transition: 1s;
+}
+/*localização da palavra glass que é uma imagem*/
+header#cabecalho {
+border-bottom: #606060 1px solid;
+height: 150px;
+background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+
+}
+/*configurações dos h1 do cabeçalho*/
+header#cabecalho h1 {
+    font-family: Arial, sans-serif;
+font-size: 30pt;
+color: #606060;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+padding: 0px;
+margin-bottom: 0px;
+}
+
+/*configuração dos h2 do cabeçalho*/
+header#cabecalho h2 {
+  font-family: "Titillium Web", sans-serif;
+color: #888;
+font-size: 15pt;
+padding: 0px;
+margin-top: 0px;
+
+}
+
+/*define a parte so section, fazendo essa parte da esquerda ser assim*/
+section#corpo {
+display: block;
+width: 1010px;
+float: left;
+border-right: 1px #606060 solid;
+padding: 14px;
+}
+
+/*define a parte so aside, fazendo essa parte da direito ser assim*/
+aside#lateral{
+display: block;
+width: 421px;
+height: 700px;
+
+float: right;
+background-color: #dddddd;
+padding: 10px;
+}
+
+aside#lateral h1 {
+font-family: 'fontelogo' sans-serif;
+font-size: 20pt;
+color: #606060;
+
+}
+
+aside#lateral h2 {
+background-color: #606060;
+font-size: 15pt;
+color: #fff;
+padding: 10px;
+}
+
+
+/*define a parte so footer, fazendo essa parte de debaixo ser assim*/
+footer#rodape {
+   clear: both; 
+   border-top: 1px #606060 solid;
+
+}
+
+/*faz o footer ficar no meio da tela na parte debaixo*/
+footer#rodape p {
+text-align: center;
+
+}
+/*define cor da borda, espaço entre a borda e as coisas de dentro*/
+table#tabela {
+border: #606060 1px solid;
+border-spacing: 0px;
+
+}
+
+/*define a borda das coisas de dentro e o espaço das palavras com a borda de cada elemento*/
+table#tabela td {
+ border: #606060 1px solid;
+padding: 10px;
+}
+
+/*define a cor do fundo do lado esquerdo, cor das letras, o lado que ela fica, a altura, a espessura*/
+td.cinza {
+background-color: #606060;
+color: #fff;
+text-align: right;
+vertical-align: top;
+font-weight: 900;
+}
+/*define a cor de fundo do lado direito, o lado que as letras ficam*/
+td.cinzaclaro {
+background-color: #dddddd;
+text-align: left;
+}
+/*define o tamanho do titulo da tabela, a espessura, cor, e o local verticalmente*/
+table#tabela caption {
+font-size: 16pt;
+font-weight: 300;
+color: #888;
+vertical-align: bottom;
+}
+
+/*define o tamanho, espessura, cor, onde tá flutuando, transforma em um bloco, aumenta a borda de cima da data da tabela pra cima pra encostar na linha*/
+table#tabela caption span {
+font-size: 7pt;
+font-weight: 900;
+color: black;
+float: right;
+display: block;
+margin-top: 14px;
+}
+/*tamanho, cor da letra, cor de fundo, espassamento dentro e fora*/
+article#noticia-principal h2 {
+font-size: 12pt;
+color: #606060;
+background-color: #dddddd;
+padding: 5px 0px 5px 10px;
+margin: 10px 0px 10px 0px;
+
+}
+
+/*a fonte da letra, tamanho, cor, margem de baixo*/
+header#cabeçalho-artigo h1 {
+font-family: 'fontelogo', sans-serif;
+font-size: 20pt;
+color: #606060;
+margin-bottom: 0px;
+
+}
+
+/*tamanho da letra, cor, cor de fundo, margem de cima*/
+header#cabeçalho-artigo h2 {
+  font-size: 13pt;
+  color: #cecece;  
+background-color: #fff;
+margin-top: 0px;
+}
+
+/* tamanho, cor*/
+header#cabeçalho-artigo h3 {
+font-size: 13px;
+color: #606060;    
+
+
+}
+
+/*fonte, cor*/
+header#cabecalho h1.oi {
+ font-family: "Work Sans", sans-serif;
+color: #000000;
+
+
+}
+/*deixar o "atualizado em 23..." na direita*/
+.direito {
+text-align: right;
+
+}
