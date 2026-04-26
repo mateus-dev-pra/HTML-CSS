@@ -9,3 +9,7 @@
 - exercicio de tabelas - [3º atividade](tabelas%20básicas/tabela-teste-1/)
 
 - site básico com HTM, CSS e JSCRIPT - [4º atividade](projeto-glass-html5/)
+
+- site mostrando redes sociais - [5º atividade](site-rede-social/)
+
+- mesma ideia da 5º atividade, mas melhorado [6º atividade](site-rede%20social-2.0/)
