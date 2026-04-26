@@ -27,6 +27,7 @@ div.foto {
 top: 5%; /*altura*/
 position: absolute; /*poder navegar pelo site*/
 margin-left: 85%;  /*faz ele ficar no certo lugar na direita*/
+z-index: 8;
 }
 
 div.tudo {
