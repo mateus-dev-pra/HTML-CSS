@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+body {
+    background-image: url(imagens/fundo-madeira.jpg);
+
+}
+
+img.celular {
+    display: block;
+    margin: auto;
+    width: 311px;
+}
+
+iframe {
+      top: 80px;  /*altura*/
+    z-index: 1;  /*faz ele ficar na frente do celular*/
+    position: absolute; /*faz ele poder navegar pela tela*/
+    width: 269px;   /*largura*/
+    height: 471px;   /*tamanho vertical*/
+    margin: auto; /*faz ele ficar no meio*/
+    left: 50%;    /*ajuda a ficar no meio*/
+    transform: translate(-49.7%); /*ajuda a ficar no meio*/
+    overflow-y: hidden;
+}
+
+div.foto {
+top: 5%; /*altura*/
+position: absolute; /*poder navegar pelo site*/
+margin-left: 85%;  /*faz ele ficar no certo lugar na direita*/
+}
+
+div.tudo {
+    position: relative;
+}
+
+img.logo {
+    border-radius: 50%; /*ficar redondo*/
+display: block;     /*virar bloco*/
+height: 50px;      /*tamanho vertical*/
+margin-bottom: 15px;  /*margem de baixo*/
+
+}
+
