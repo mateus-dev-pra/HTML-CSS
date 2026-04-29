@@ -265,3 +265,8 @@ color: #000000;
 text-align: right;
 
 }
+
+img.logo {
+z-index: 9;
+
+}
