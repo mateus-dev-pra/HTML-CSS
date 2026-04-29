@@ -47,5 +47,8 @@ img.logo:hover {
     transition: 0.5s;
 }
 
+img.logo {
+z-index: 11;
 
+}
 
