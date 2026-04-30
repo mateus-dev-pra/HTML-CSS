@@ -10,10 +10,6 @@
 
 - site básico com HTM, CSS e JSCRIPT - [4º atividade](projeto-glass-html5/)
 
-- site mostrando redes sociais - [5º atividade](site-rede-social/)
+-site de rede social - [5º atividade](site-rede-social-3.0/)
 
-- mesma ideia da 5º atividade, mas melhorado - [6º atividade](site-rede%20social-2.0/)
-
-- versão 3.0 do site de rede social - [7º atividade](site-rede-social-3.0/)
-
-- front de cadastro [8º atividade](cadastro/)
+- front de cadastro [6º atividade](cadastro/)
