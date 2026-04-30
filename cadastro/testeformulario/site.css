@@ -19,6 +19,12 @@ input, select {
   box-sizing: border-box;
 }
 
+/* 🔥 corrige radios */
+input[type="radio"] {
+  width: auto;
+  margin: 0;
+}
+
 p {
   display: flex;
   flex-direction: column;
@@ -37,16 +43,18 @@ div.terceiro {
   gap: 20px;
 }
 
-div.genero > label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 5px;
-}
-
+/* 🔥 alinhar genero certinho */
 div.genero {
   display: flex;
   flex-direction: column;
+}
+
+div.genero > label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
 }
 
 textarea {
@@ -85,7 +93,7 @@ h2 {
   text-align: center;
 }
 
-/* 🔥 RESPONSIVIDADE */
+/* 🔥 RESPONSIVO */
 @media (max-width: 768px) {
 
   div.primeiro {
