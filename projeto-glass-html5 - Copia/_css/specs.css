@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*determina a largura e altura da parte do oculos e da mão*/
+section#conteudo {
+    width: 1000px;
+    margin: auto;
+}
+/*a parte especifica da parte que vai mudar quando as partes do oculos forem apertadas*/
+iframe#frame-spec {
+    width: 400px;
+    height: 280px;
+    border: none;
+    overflow: hidden;
+}
+/*permite mudar a barra de subir e descer*/
+iframe#frame-spec::-webkit-scrollbar {
+  display: none;
+
+}

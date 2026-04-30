@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+div#audiovideo {
+background: url(../_imagens/radio-tv.png) no-repeat;
+height: 900px;
+
+}
+
+video#filme {
+position: relative;
+display: block;
+left: 90px;
+top: 60px;
+width: 440px;
+}
+ audio#musica {
+position: relative;
+display: block;
+left: 575px;
+top: 488px;
+width: 300px;
+ }
+
+ video.montanha {
+
+    height: 600px;
+    width: auto;
+ }
