@@ -8,8 +8,8 @@
 
 - exercicio de tabelas - [3º atividade](tabelas%20básicas/tabela-teste-1/)
 
-- site básico com HTM, CSS e JSCRIPT - [4º atividade](projeto-glass-html5/)
+- site básico com HTM, CSS e JSCRIPT - [4º atividade](projeto-glass-html5%20-%20Copia//)
 
 -site de rede social - [5º atividade](site-rede-social-3.0/)
 
-- front de cadastro [6º atividade](cadastro/)
+- front de cadastro - [6º atividade](cadastro/)
