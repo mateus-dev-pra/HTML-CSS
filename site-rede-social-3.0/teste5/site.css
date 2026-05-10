@@ -2,53 +2,80 @@
 
 body {
     background-image: url(imagens/fundo-madeira.jpg);
-
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
+/* área principal */
+div.tudo {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* celular */
 img.celular {
     display: block;
     margin: auto;
     width: 311px;
 }
 
+/* tela */
 iframe {
-      top: 80px;  /*altura*/
-    z-index: 1;  /*faz ele ficar na frente do celular*/
-    position: absolute; /*faz ele poder navegar pela tela*/
-    width: 269px;   /*largura*/
-    height: 471px;   /*tamanho vertical*/
-    margin: auto; /*faz ele ficar no meio*/
-    left: 50%;    /*ajuda a ficar no meio*/
-    transform: translate(-49.7%); /*ajuda a ficar no meio*/
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-49.7%);
+    width: 269px;
+    height: 471px;
+    z-index: 1;
     overflow-y: hidden;
 }
 
+/* área dos ícones */
 div.foto {
-top: 5%; /*altura*/
-position: absolute; /*poder navegar pelo site*/
-margin-left: 85%;  /*faz ele ficar no certo lugar na direita*/
+    position: absolute;
+    top: 5%;
+    right: 10px;
 }
 
-div.tudo {
-    position: relative;
-}
-
+/* ícones */
 img.logo {
-    border-radius: 50%; /*ficar redondo*/
-display: block;     /*virar bloco*/
-height: 50px;      /*tamanho vertical*/
-margin-bottom: 15px;  /*margem de baixo*/
-box-sizing: border-box;
+    display: block;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 11;
 }
 
+/* efeito hover */
 img.logo:hover {
     border: 2px solid wheat;
     transform: translate(-3px, -3px);
     transition: 0.5s;
 }
 
-img.logo {
-z-index: 11;
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
 
+    img.celular {
+        width: 250px;
+    }
+
+    iframe {
+        width: 216px;
+        height: 379px;
+        top: 64px;
+    }
+
+    div.foto {
+        right: 5px;
+    }
+
+    img.logo {
+        height: 38px;
+        margin-bottom: 10px;
+    }
 }
-
