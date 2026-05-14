@@ -12,6 +12,6 @@
 
 - front de cadastro - [5º atividade](cadastro/)
 
-- front de cadastro - [6º atividade](tela-login/)
+- front de login - [6º atividade](tela-login/)
 
-- front de cadastro - [7º atividade](rotacao-de-tela/)
+- rotação de tela - [7º atividade](rotacao-de-tela/)
