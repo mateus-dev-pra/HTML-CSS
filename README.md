@@ -2,14 +2,16 @@
 
 ## exercicios simples
 
-- site básico sobre tecnologia [1º atividade](exercicio%201/)
+- site básico sobre tecnologia [1º atividade](site-tecnologia/)
 
-- site básico referente a um poema - [2º atividade](site%20básico/)
+- site básico referente a um poema - [2º atividade](site%20cordel/)
 
-- exercicio de tabelas - [3º atividade](tabelas%20básicas/tabela-teste-1/)
+- exercicio de tabelas - [3º atividade](tabelas-básicas/)
 
-- site básico com HTM, CSS e JSCRIPT - [4º atividade](projeto-glass-html5%20-%20Copia//)
+- site de rede social - [4º atividade](site-rede-social/)
 
--site de rede social - [5º atividade](site-rede-social-3.0/)
+- front de cadastro - [5º atividade](cadastro/)
 
-- front de cadastro - [6º atividade](cadastro/)
+- front de cadastro - [6º atividade](tela-login/)
+
+- front de cadastro - [7º atividade](rotacao-de-tela/)
