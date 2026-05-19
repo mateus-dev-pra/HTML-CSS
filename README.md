@@ -10,8 +10,8 @@
 
 - site de rede social - [4º atividade](site-rede-social/)
 
-- front de cadastro - [5º atividade](cadastro/)
+- visual de cadastro - [5º atividade](cadastro/)
 
-- front de login - [6º atividade](tela-login/)
+- visual de login - [6º atividade](tela-login/)
 
-- rotação de tela - [7º atividade](rotacao-de-tela/)
+- rotação da tela - [7º atividade](rotacao-de-tela/)
