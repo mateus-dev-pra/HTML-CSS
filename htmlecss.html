@@ -1,68 +1,533 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            text-align: center;
-            margin: 0;
-        }
+  <title>HTML & CSS</title>
 
-        h1 {
-            background: #333;
-            color: white;
-            padding: 20px;
-            margin: 0;
-        }
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/0c49ca79fb.js" crossorigin="anonymous"></script>
 
-        h2 {
-            margin-top: 30px;
-        }
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
-        li {
-            margin: 10px 0;
-        }
+  <style>
 
-        a {
-            display: inline-block;
-            width: 250px;
-            padding: 10px;
-            background: #0077ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-        a:hover {
-            background: #005fcc;
-        }
-    </style>
+    body{
+
+      font-family:'Poppins', sans-serif;
+
+      background:
+      linear-gradient(135deg,#0f172a,#111827,#1e293b);
+
+      min-height:100vh;
+
+      color:white;
+
+      overflow-x:hidden;
+
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header{
+
+      width:100%;
+
+      padding:25px;
+
+      background:
+      rgba(15,23,42,.85);
+
+      backdrop-filter:blur(10px);
+
+      border-bottom:2px solid #ff5a1f;
+
+      position:sticky;
+      top:0;
+
+      z-index:999;
+
+      box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+    }
+
+    header h1{
+
+      text-align:center;
+
+      font-size:2.5em;
+
+      color:#ffffff;
+
+      letter-spacing:2px;
+
+    }
+
+    header h1 span{
+
+      color:#ff5a1f;
+
+    }
+
+    /* =========================
+       MAIN
+    ========================= */
+
+    main{
+
+      width:100%;
+      max-width:1300px;
+
+      margin:auto;
+
+      padding:50px 20px;
+
+    }
+
+    .titulo{
+
+      text-align:center;
+
+      margin-bottom:50px;
+
+    }
+
+    .titulo h2{
+
+      font-size:2.2em;
+
+      margin-bottom:10px;
+
+    }
+
+    .titulo p{
+
+      color:#cbd5e1;
+
+      font-size:1.05em;
+
+    }
+
+    /* =========================
+       GRID
+    ========================= */
+
+    .container{
+
+      display:grid;
+
+      grid-template-columns:
+      repeat(auto-fit,minmax(280px,1fr));
+
+      gap:30px;
+
+    }
+
+    /* =========================
+       CARD
+    ========================= */
+
+    .card{
+
+      background:
+      rgba(15,23,42,.85);
+
+      border:1px solid rgba(255,255,255,.08);
+
+      border-radius:20px;
+
+      padding:30px 25px;
+
+      transition:.4s;
+
+      position:relative;
+
+      overflow:hidden;
+
+      box-shadow:
+      0 10px 30px rgba(0,0,0,.35);
+
+    }
+
+    .card::before{
+
+      content:"";
+
+      position:absolute;
+
+      top:0;
+      left:-100%;
+
+      width:100%;
+      height:100%;
+
+      background:
+      linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.08),
+        transparent
+      );
+
+      transition:.7s;
+
+    }
+
+    .card:hover::before{
+
+      left:100%;
+
+    }
+
+    .card:hover{
+
+      transform:
+      translateY(-10px)
+      scale(1.02);
+
+      border-color:#ff5a1f;
+
+      box-shadow:
+      0 20px 40px rgba(0,0,0,.5);
+
+    }
+
+    /* =========================
+       ÍCONE
+    ========================= */
+
+    .icone{
+
+      width:75px;
+      height:75px;
+
+      margin:auto auto 20px auto;
+
+      border-radius:20px;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      font-size:2.5em;
+
+      background:
+      linear-gradient(135deg,#ff5a1f,#ff7b52);
+
+      color:white;
+
+      box-shadow:
+      0 10px 25px rgba(255,90,31,.35);
+
+    }
+
+    /* =========================
+       TEXTOS
+    ========================= */
+
+    .card h3{
+
+      text-align:center;
+
+      font-size:1.4em;
+
+      margin-bottom:12px;
+
+    }
+
+    .card p{
+
+      text-align:center;
+
+      color:#cbd5e1;
+
+      line-height:1.7em;
+
+      font-size:.95em;
+
+      margin-bottom:25px;
+
+    }
+
+    /* =========================
+       BOTÃO
+    ========================= */
+
+    .card a{
+
+      display:block;
+
+      text-align:center;
+
+      text-decoration:none;
+
+      background:
+      linear-gradient(135deg,#ff5a1f,#ff7b52);
+
+      color:white;
+
+      padding:14px;
+
+      border-radius:12px;
+
+      font-weight:600;
+
+      transition:.3s;
+
+    }
+
+    .card a:hover{
+
+      transform:scale(1.05);
+
+      box-shadow:
+      0 10px 25px rgba(255,90,31,.4);
+
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer{
+
+      text-align:center;
+
+      padding:30px 20px;
+
+      color:#cbd5e1;
+
+      font-size:.95em;
+
+    }
+
+    /* =========================
+       RESPONSIVO
+    ========================= */
+
+    @media screen and (max-width:768px){
+
+      header h1{
+
+        font-size:2em;
+
+      }
+
+      .titulo h2{
+
+        font-size:1.8em;
+
+      }
+
+    }
+
+  </style>
+
 </head>
+
 <body>
 
-    <h1>🚀 HTML & CSS</h1>
-    <h2>Exercícios simples</h2>
+  <!-- HEADER -->
+  <header>
 
-    <ul>
-        <li><a href="site-tecnologia/">1º atividade - site básico sobre tecnologia</a></li>
-        <li><a href="site cordel/">2º atividade - site sobre poema</a></li>
-        <li><a href="tabelas-básicas/tabela-teste-1/">3º atividade - tabelas</a></li>
-        <li><a href="site-rede-social/teste5/">4º atividade - versão 3.0</a></li>
-        <li><a href="cadastro/testeformulario/">5º atividade - cadastro</a></li>
-        <li><a href="tela-login/login/index.html">6º atividade - login</a></li>
-       <li><a href="rotacao-de-tela/index.html">7º atividade - rotação de tela</a></li>
-    </ul>
+    <h1>
+      🚀 <span>HTML</span> & CSS
+    </h1>
+
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- TÍTULO -->
+    <section class="titulo">
+
+      <h2>
+        Meus Exercícios e Projetos
+      </h2>
+
+      <p>
+        Alguns projetos desenvolvidos durante meus estudos de HTML e CSS.
+      </p>
+
+    </section>
+
+    <!-- CARDS -->
+    <section class="container">
+
+      <!-- CARD 1 -->
+      <div class="card">
+
+        <div class="icone">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+
+        <h3>
+          Site Tecnologia
+        </h3>
+
+        <p>
+          Primeiro projeto simples sobre tecnologia usando HTML e CSS.
+        </p>
+
+        <a href="site-tecnologia/">
+          Abrir Projeto
+        </a>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+
+        <div class="icone">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+
+        <h3>
+          Site Cordel
+        </h3>
+
+        <p>
+          Projeto inspirado em poemas com efeito parallax e estilização moderna.
+        </p>
+
+        <a href="site cordel/">
+          Abrir Projeto
+        </a>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+
+        <div class="icone">
+          <i class="fa-solid fa-table"></i>
+        </div>
+
+        <h3>
+          Tabelas
+        </h3>
+
+        <p>
+          Exercícios focados em criação e estilização de tabelas em HTML.
+        </p>
+
+        <a href="tabelas-básicas/tabela-teste-1/">
+          Abrir Projeto
+        </a>
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+
+        <div class="icone">
+          <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+
+        <h3>
+          Rede Social
+        </h3>
+
+        <p>
+          Projeto simulando uma interface moderna de rede social responsiva.
+        </p>
+
+        <a href="site-rede-social/teste5/">
+          Abrir Projeto
+        </a>
+
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="card">
+
+        <div class="icone">
+          <i class="fa-solid fa-user-plus"></i>
+        </div>
+
+        <h3>
+          Cadastro
+        </h3>
+
+        <p>
+          Formulário de cadastro com design moderno e organizado.
+        </p>
+
+        <a href="cadastro/testeformulario/">
+          Abrir Projeto
+        </a>
+
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="card">
+
+        <div class="icone">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <h3>
+          Tela Login
+        </h3>
+
+        <p>
+          Tela de login estilizada utilizando HTML e CSS responsivo.
+        </p>
+
+        <a href="tela-login/login/index.html">
+          Abrir Projeto
+        </a>
+
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="card">
+
+        <div class="icone">
+          <i class="fa-solid fa-rotate"></i>
+        </div>
+
+        <h3>
+          Rotação de Tela
+        </h3>
+
+        <p>
+          Projeto testando responsividade e adaptação de orientação da tela.
+        </p>
+
+        <a href="rotacao-de-tela/index.html">
+          Abrir Projeto
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    Desenvolvido por Mateus Araújo 🚀
+
+  </footer>
 
 </body>
+
 </html>
